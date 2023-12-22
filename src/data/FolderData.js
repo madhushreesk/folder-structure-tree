@@ -1,68 +1,118 @@
 export const FolderData = {
   id: "1",
-  name: "root",
+  name: "EVALUATION",
   isFolder: true,
   items: [
     {
-      id: "2",
-      name: "public",
+      id: "1",
+      name: "Applications",
       isFolder: true,
       items: [
         {
+          id: "2",
+          name: "Webstorm.dmg",
+          isFolder: false,
+          items: [],
+        },
+        {
           id: "3",
-          name: "public nested 1",
+          name: "Pycharm.dmg",
+          isFolder: false,
+          items: [],
+        },
+        {
+          id: "4",
+          name: "FileZila.dmg",
+          isFolder: false,
+          items: [],
+        },
+        {
+          id: "5",
+          name: "Mattermost.dmg",
+          isFolder: false,
+          items: [],
+        },
+      ],
+    },
+    {
+      id: "6",
+      name: "Desktop",
+      isFolder: true,
+      items: [
+        {
+          id: "7",
+          name: "Screenshot1.jpg",
+          isFolder: false,
+          items: [],
+        },
+        {
+          id: "8",
+          name: "videopal.mp4",
+          isFolder: false,
+          items: [],
+        },
+      ],
+    },
+    {
+      id: "9",
+      name: "Documents",
+      isFolder: true,
+      items: [
+        {
+          id: "10",
+          name: "Document1.jpg",
+          isFolder: false,
+          items: [],
+        },
+        {
+          id: "11",
+          name: "Document2.jpg",
+          isFolder: false,
+          items: [],
+        },
+        {
+          id: "12",
+          name: "Document3.jpg",
+          isFolder: false,
+          items: [],
+        },
+      ],
+    },
+    {
+      id: "13",
+      name: "Downloads",
+      isFolder: true,
+      items: [
+        {
+          id: "14",
+          name: "Drivers",
           isFolder: true,
           items: [
             {
-              id: "4",
-              name: "index.html",
+              id: "15",
+              name: "cameradriver.dmg",
               isFolder: false,
               items: [],
             },
             {
-              id: "5",
-              name: "hello.html",
+              id: "16",
+              name: "Printerdriver.dmg",
               isFolder: false,
               items: [],
             },
           ],
         },
         {
-          id: "6",
-          name: "public_nested_file",
-          isFolder: false,
+          id: "17",
+          name: "Images",
+          isFolder: true,
           items: [],
         },
       ],
     },
     {
-      id: "7",
-      name: "src",
-      isFolder: true,
-      items: [
-        {
-          id: "8",
-          name: "App.js",
-          isFolder: false,
-          items: [],
-        },
-        {
-          id: "9",
-          name: "Index.js",
-          isFolder: false,
-          items: [],
-        },
-        {
-          id: "10",
-          name: "styles.css",
-          isFolder: false,
-          items: [],
-        },
-      ],
-    },
-    {
-      id: "11",
-      name: "package.json",
+      id: "18",
+      name: "chromedriver.dmg",
       isFolder: false,
       items: [],
     },

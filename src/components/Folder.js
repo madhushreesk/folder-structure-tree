@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Folder = ({ handleInsertNode, folderData }) => {
+const Folder = ({ handleInsertNode, handleDeleteNode, folderData }) => {
   const [expand, setExpand] = useState(false);
   const [showInput, setShowInput] = useState({
     visible: false,
@@ -25,7 +25,14 @@ const Folder = ({ handleInsertNode, folderData }) => {
 
   if (folderData.isFolder) {
     return (
-      <div style={{ margin: "10px" }}>
+      <div
+        style={{
+          margin: "10px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <div>
           <div className="folder" onClick={() => setExpand(!expand)}>
             <span style={{ cursor: "pointer" }}>🗂️ {folderData.name}</span>
@@ -37,6 +44,7 @@ const Folder = ({ handleInsertNode, folderData }) => {
               >
                 🗂️
               </div>
+              {/* <div onClick={(e) => handleDeleteNode(e, true)}>-</div> */}
             </div>
           </div>
 
@@ -59,6 +67,7 @@ const Folder = ({ handleInsertNode, folderData }) => {
               return (
                 <Folder
                   handleInsertNode={handleInsertNode}
+                  handleDeleteNode={handleDeleteNode}
                   folderData={item}
                   key={item.id}
                 />
