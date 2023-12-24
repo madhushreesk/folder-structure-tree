@@ -8,7 +8,7 @@ function App() {
 
   // console.log(folderData);
 
-  const { insertNode, deleteNode, updateNode } = useTraversetree();
+  const { insertNode, deleteNode } = useTraversetree();
 
   const handleInsertNode = (folderId, item, isFolder) => {
     const finalTree = insertNode(folderData, folderId, item, isFolder);
@@ -16,11 +16,11 @@ function App() {
     setFolderData(finalTree);
   };
 
-  const handleDeleteNode = (folderData, folderId) => {
+  const handleDeleteNode = (folderId) => {
     const filteredTree = deleteNode(folderData, folderId);
-
     setFolderData(filteredTree);
   };
+
   return (
     <div className="App">
       <Folder

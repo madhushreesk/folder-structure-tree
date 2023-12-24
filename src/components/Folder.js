@@ -7,6 +7,11 @@ const Folder = ({ handleInsertNode, handleDeleteNode, folderData }) => {
     isFolder: false,
   });
 
+  const handleDelete = (e) => {
+    e.stopPropagation();
+    handleDeleteNode(folderData.id);
+  };
+
   const handleNewFolder = (e, isFolder) => {
     e.stopPropagation();
     setExpand(true);
@@ -44,7 +49,12 @@ const Folder = ({ handleInsertNode, handleDeleteNode, folderData }) => {
               >
                 🗂️
               </div>
-              {/* <div onClick={(e) => handleDeleteNode(e, true)}>-</div> */}
+              <div
+                onClick={handleDelete}
+                style={{ marginLeft: "7px", color: "red", cursor: "pointer" }}
+              >
+                🗑️
+              </div>
             </div>
           </div>
 
